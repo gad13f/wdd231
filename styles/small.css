@@ -1,0 +1,218 @@
+:root {
+    --primary-color: #003366;
+    --secondary-color: #006699;
+    --accent-color: #e6f2ff;
+    --completed-bg: #d4edda;
+    --completed-border: #28a745;
+    --completed-text: #155724;
+    --incomplete-bg: #f8d7da;
+    --incomplete-border: #dc3545;
+    --incomplete-text: #721c24;
+    --text-color: #333333;
+    --bg-color: #f4f4f9;
+    --font-family: 'Roboto', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-family);
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    line-height: 1.6;
+}
+
+/* Header & Navigation */
+header {
+    background-color: var(--primary-color);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    position: relative;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+#hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 25px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+#hamburger span {
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    transition: all 0.3s ease;
+}
+
+nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--secondary-color);
+    z-index: 1000;
+}
+
+nav.open {
+    display: block;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav a {
+    display: block;
+    padding: 0.75rem 1rem;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+nav li.active a {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-left: 4px solid white;
+}
+
+/* Main Layout */
+main {
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.card h2 {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+}
+
+.card-content {
+    padding: 1rem;
+}
+
+.profile-container img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+/* Certificate & Filter Buttons */
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 1rem;
+}
+
+.filter-buttons button {
+    padding: 0.5rem 1.5rem;
+    border: 1px solid var(--primary-color);
+    background-color: white;
+    color: var(--primary-color);
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.filter-buttons button.active-filter,
+.filter-buttons button:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.course-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.course-card {
+    padding: 1rem;
+    border-radius: 6px;
+    border-left: 6px solid;
+    font-weight: 500;
+    text-align: center;
+}
+
+.course-card.completed {
+    background-color: var(--completed-bg);
+    border-color: var(--completed-border);
+    color: var(--completed-text);
+}
+
+.course-card.incomplete {
+    background-color: var(--incomplete-bg);
+    border-color: var(--incomplete-border);
+    color: var(--incomplete-text);
+}
+
+.credit-total {
+    text-align: center;
+    padding: 1rem;
+    font-weight: 700;
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1.5rem 1rem;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+}
+
+.footer-social {
+    display: flex;
+    gap: 1rem;
+}
