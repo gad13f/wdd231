@@ -78,7 +78,6 @@ document.addEventListener('DOMContentLoaded', () => {
             courseContainer.appendChild(courseDiv);
         });
 
-        // Calculate credits using reduce
         const totalCredits = filteredCourses.reduce((sum, course) => sum + course.credits, 0);
         totalCreditsSpan.textContent = totalCredits;
     }
@@ -88,7 +87,6 @@ document.addEventListener('DOMContentLoaded', () => {
         activeBtn.classList.add('active-filter');
     }
 
-    // Event Listeners for Filtering
     allBtn.addEventListener('click', () => {
         setActiveButton(allBtn);
         displayCourses(courses);
@@ -106,6 +104,5 @@ document.addEventListener('DOMContentLoaded', () => {
         displayCourses(cseCourses);
     });
 
-    // Initial render
     displayCourses(courses);
 });

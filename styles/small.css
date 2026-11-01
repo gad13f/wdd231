@@ -26,7 +26,6 @@ body {
     line-height: 1.6;
 }
 
-/* Header & Navigation */
 header {
     background-color: var(--primary-color);
     color: white;
@@ -98,7 +97,7 @@ nav li.active a {
     border-left: 4px solid white;
 }
 
-/* Main Layout */
+
 main {
     padding: 1rem;
     max-width: 1200px;
@@ -142,7 +141,6 @@ h1 {
     margin-bottom: 1rem;
 }
 
-/* Certificate & Filter Buttons */
 .filter-buttons {
     display: flex;
     justify-content: center;
