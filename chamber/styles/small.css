@@ -1,4 +1,3 @@
-/* --- Variables y Reset --- */
 :root {
     --primary-color: #4b001e;
     --secondary-color: #2b0014;
@@ -22,7 +21,6 @@ body {
     line-height: 1.5;
 }
 
-/* --- Header y Navegación Móvil --- */
 header {
     background-color: var(--primary-color);
     color: white;
@@ -69,7 +67,7 @@ header {
 
 nav ul {
     list-style: none;
-    display: none; /* Se oculta por defecto en celular */
+    display: none;
     background-color: #2b0014;
 }
 
@@ -90,7 +88,6 @@ nav a.active, nav a:hover {
     font-weight: bold;
 }
 
-/* --- Seccion Principal --- */
 main {
     max-width: 1200px;
     margin: 0 auto;
@@ -128,7 +125,6 @@ main {
     border-color: var(--primary-color);
 }
 
-/* --- Modo Cuadrícula (Móvil: 1 columna) --- */
 #members-container.grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -173,7 +169,6 @@ main {
     margin-top: 0.5rem !important;
 }
 
-/* --- Modo Lista (Móvil) --- */
 #members-container.list {
     display: flex;
     flex-direction: column;
@@ -188,7 +183,7 @@ main {
 }
 
 #members-container.list img {
-    display: none; /* En vista de lista se ocultan las imágenes */
+    display: none;
 }
 
 #members-container.list h3 {
@@ -200,7 +195,6 @@ main {
     font-size: 0.85rem;
 }
 
-/* --- Footer --- */
 footer {
     background-color: var(--primary-color);
     color: white;

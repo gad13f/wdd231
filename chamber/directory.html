@@ -12,15 +12,12 @@
     <meta property="og:image" content="https://gad13f.github.io/wdd231/chamber/images/logo.jpg">
     <meta property="og:url" content="https://gad13f.github.io/wdd231/chamber/directory.html">
 
-    <!-- Favicon -->
     <link rel="icon" href="images/favicon.png" type="image/png">
     
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
-    <!-- CSS -->
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css">
@@ -50,19 +47,17 @@
     <main>
         <div class="directory-header">
             <h1>Members Directory</h1>
-            <!-- Botones de alternancia de vista exactos al wireframe -->
+            
             <div class="view-toggle">
                 <button id="grid" aria-label="Vista en Cuadrícula" class="active">🏢 Grid</button>
                 <button id="list" aria-label="Vista en Lista">📋 List</button>
             </div>
         </div>
 
-        <!-- Contenedor donde JS renderiza los miembros -->
         <div id="members-container" class="grid"></div>
     </main>
 
     <footer>
-        <!-- Sección Superior del Pie de Página: Datos de la Cámara -->
         <div class="footer-top">
             <div class="footer-info">
                 <h2>matamoros chamber of commerce</h2>
@@ -71,7 +66,7 @@
             </div>
         </div>
         <hr>
-        <!-- Sección Inferior: Créditos del Alumno y Modificación -->
+        
         <div class="footer-bottom">
             <p>&copy; <span id="currentyear"></span> Gad Cerda Lara | WDD 231 Class Project</p>
             <p>Last Modified: <span id="lastModified"></span></p>

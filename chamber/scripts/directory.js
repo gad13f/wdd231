@@ -5,7 +5,6 @@ const listButton = document.querySelector("#list");
 const menuButton = document.querySelector("#menu-button");
 const navMenu = document.querySelector("#menu-list");
 
-// Menú Móvil
 if (menuButton) {
     menuButton.addEventListener("click", () => {
         navMenu.classList.toggle("open");
@@ -13,7 +12,6 @@ if (menuButton) {
     });
 }
 
-// Obtener datos del JSON
 async function getMembersData() {
     try {
         const response = await fetch(membersURL);
@@ -28,7 +26,6 @@ async function getMembersData() {
 
 getMembersData();
 
-// Renderizar tarjetas
 const displayMembers = (members) => {
     cards.innerHTML = "";
     members.forEach((member) => {
@@ -49,7 +46,6 @@ const displayMembers = (members) => {
     });
 };
 
-// Toggle Grid / List
 gridButton.addEventListener("click", () => {
     cards.classList.add("grid");
     cards.classList.remove("list");
@@ -64,6 +60,5 @@ listButton.addEventListener("click", () => {
     gridButton.classList.remove("active");
 });
 
-// Fechas del Footer
 document.getElementById("currentyear").textContent = new Date().getFullYear();
 document.getElementById("lastModified").textContent = document.lastModified;
