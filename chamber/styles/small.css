@@ -200,7 +200,6 @@ main {
     font-size: 0.85rem;
 }
 
-/* --- Footer (2 bloques según wireframe) --- */
 footer {
     background-color: var(--primary-color);
     color: white;
