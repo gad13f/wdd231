@@ -1,0 +1,85 @@
+{
+  "members": [
+    {
+      "name": "Innova Technological S.A.",
+      "address": "Av. Roberto Guerra #123, Matamoros",
+      "phone": "+52 868-1234-5678",
+      "website": "https://www.innova.com",
+      "image": "innova.jpeg",
+      "membershipLevel": 3,
+      "description": "Software Development and solutions."
+    },
+    {
+      "name": "Plaza Cafe",
+      "address": "Calle Solidaridad #45, Matamoros",
+      "phone": "+52 868-9876-5433",
+      "website": "https://www.cafedelaplaza.com",
+      "image": "cafe.jpeg",
+      "membershipLevel": 1,
+      "description": "Artesanal coffee and local pastry."
+    },
+    {
+      "name": "American Tex-Mex professinal construction solutions",
+      "address": "Blvd. Manuel Cavazos Lerma #500, Matamoros",
+      "phone": "+52 868-456-7890",
+      "website": "https://www.texmexconstruct.com",
+      "image": "ferre.jpeg",
+      "membershipLevel": 2,
+      "description": "construction sales and services in Northern Tamaulipas and South Texas."
+    },
+    {
+      "name": "El Estudiante Books & Supplies",
+      "address": "Calle Sexta #1240, Matamoros",
+      "phone": "+52 868-307-0123",
+      "website": "https://www.bookstorelestudiante.com",
+      "image": "paper.jpeg",
+      "membershipLevel": 1,
+      "description": "School supplies, office materials, books and general literature."
+    },
+    {
+      "name": "Iron Fitness",
+      "address": "Calle Buena Vista #890, Matamoros",
+      "phone": "+52 868-307-1879",
+      "website": "https://www.ironfitnessgym.com",
+      "image": "gym.jpeg",
+      "membershipLevel": 3,
+      "description": "Center for physical training, weights and conditioning classes."
+    },
+    {
+      "name": "White Smile, Dental Clinic",
+      "address": "Av. Pedro Cárdenas #310, Matamoros",
+      "phone": "+52 868-654-3210",
+      "website": "https://www.dentalwhite.com",
+      "image": "dental.jpeg",
+      "membershipLevel": 2,
+      "description": "Integrated dental services and dental aesthetics."
+    },
+    {
+      "name": "Restaurant El Ancla Negra",
+      "address": "Av. Del Niño #715, Matamoros",
+      "phone": "+52 868-901-2345",
+      "website": "https://www.elancla.com",
+      "image": "mariscos.jpeg",
+      "membershipLevel": 3,
+      "description": "Specialized in fresh fish and seafood from the coast."
+    },
+    {
+      "name": "Panadería La Especial",
+      "address": "Calle Once #11, Matamoros",
+      "phone": "+52 868-555-4321",
+      "website": "https://www.panerialaespecial.com",
+      "image": "panaderia.jpeg",
+      "membershipLevel": 1,
+      "description": "The most traditional bakery in Matamoros."
+    },
+    {
+      "name": "X-Ray Center, Radiology Services",
+      "address": "Av. Lauro Villar #2200, Matamoros",
+      "phone": "+52 868-555-8765",
+      "website": "https://www.xraycenter.com",
+      "image": "xray.jpeg",
+      "membershipLevel": 2,
+      "description": "Diagnostic imaging services and radiology consultations."
+    }
+  ]
+}

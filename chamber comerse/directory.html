@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber of Commerce</title>
+    <meta name="description" content="Directorio oficial de miembros de la Cámara de Comercio.">
+    <meta name="author" content="Tu Nombre Completo">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Directorio de la Cámara de Comercio">
+    <meta property="og:description" content="Conoce a las empresas asociadas a nuestra cámara de comercio.">
+    <meta property="og:image" content="https://tuusuario.github.io/wdd231/chamber/images/hero.jpg">
+    <meta property="og:url" content="https://tuusuario.github.io/wdd231/chamber/directory.html">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.png" type="image/png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css" media="(min-width: 768px)">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo-box">
+                <img src="images/logo.png" alt="Chamber of commerce Logo">
+                <div class="site-name">
+                    <span>CHAMBER OF COMMERCE</span>
+                    <span class="sub-title">Matamoros Tamaulipas</span>
+                </div>
+            </div>
+            <button id="menu-button" aria-label="Abrir Menú">☰</button>
+        </div>
+        <nav>
+            <ul id="menu-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html" class="active">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="directory-header">
+            <h1>Members Directory</h1>
+            <!-- Botones de alternancia de vista exactos al wireframe -->
+            <div class="view-toggle">
+                <button id="grid" aria-label="Vista en Cuadrícula" class="active">🏢 Grid</button>
+                <button id="list" aria-label="Vista en Lista">📋 List</button>
+            </div>
+        </div>
+
+        <!-- Contenedor donde JS renderiza los miembros -->
+        <div id="members-container" class="grid"></div>
+    </main>
+
+    <footer>
+        <!-- Sección Superior del Pie de Página: Datos de la Cámara -->
+        <div class="footer-top">
+            <div class="footer-info">
+                <h3>matamoros chamber of commerce</h3>
+                <p>6ta, Matamoros, Mexico</p>
+                <p>info@matamoroschamber.org | (868) 435-1234</p>
+            </div>
+        </div>
+        <hr>
+        <!-- Sección Inferior: Créditos del Alumno y Modificación -->
+        <div class="footer-bottom">
+            <p>&copy; <span id="currentyear"></span> Gad Cerda Lara | WDD 231 Class Project</p>
+            <p>Last Modified: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+
+    <script src="scripts/directory.js" defer></script>
+</body>
+</html>
