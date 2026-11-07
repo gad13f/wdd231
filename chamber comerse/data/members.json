@@ -59,7 +59,7 @@
       "address": "Av. Del Niño #715, Matamoros",
       "phone": "+52 868-901-2345",
       "website": "https://www.elancla.com",
-      "image": "mariscos.jpeg",
+      "image": "mariscos.png",
       "membershipLevel": 3,
       "description": "Specialized in fresh fish and seafood from the coast."
     },
@@ -68,7 +68,7 @@
       "address": "Calle Once #11, Matamoros",
       "phone": "+52 868-555-4321",
       "website": "https://www.panerialaespecial.com",
-      "image": "panaderia.jpeg",
+      "image": "panaderia.png",
       "membershipLevel": 1,
       "description": "The most traditional bakery in Matamoros."
     },
@@ -77,7 +77,7 @@
       "address": "Av. Lauro Villar #2200, Matamoros",
       "phone": "+52 868-555-8765",
       "website": "https://www.xraycenter.com",
-      "image": "xray.jpeg",
+      "image": "xray.png",
       "membershipLevel": 2,
       "description": "Diagnostic imaging services and radiology consultations."
     }
