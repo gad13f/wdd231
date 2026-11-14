@@ -26,7 +26,6 @@
     <script defer src="scripts/weather.js"></script>
     <script defer src="scripts/getdates.js"></script>
     <script defer src="scripts/navigation.js"></script>
-
 </head>
 <body>
     <header>
@@ -51,6 +50,9 @@
     </header>
 
     <main class="home-main">
+        <!-- Encabezado principal obligatorio que coincide con el título -->
+        <h1>Directory | Matamoros Chamber of Commerce</h1>
+
         <section class="hero">
             <img src="images/hero.jpeg" alt="Matamoros Business Community Hero Image" class="hero-image" width="1200" height="600">
             <div class="hero-cta">
@@ -61,7 +63,7 @@
 
         <!-- Contenedor para Eventos y Clima -->
         <div class="info-grid">
-            <!-- Componente 3: Sección de Evento(s) Actual(es) -->
+            <!-- Sección de Evento(s) Actual(es) -->
             <section class="events-card card">
                 <h2>Current Events</h2>
                 <article class="event-item">
@@ -76,7 +78,7 @@
                 </article>
             </section>
 
-            <!-- Componente 4: Sección Meteorológica -->
+            <!-- Sección Meteorológica -->
             <section class="weather-card card">
                 <h2>Weather</h2>
                 <div class="weather-content">
@@ -90,11 +92,10 @@
             </section>
         </div>
 
-        <!-- Componente 5: Sección de Focos de Compañía (Spotlights) -->
+        <!-- Sección de Focos de Compañía (Spotlights) -->
         <section class="spotlights-section">
             <h2>Featured Member Spotlights</h2>
             <div id="spotlights-container" class="spotlights-grid">
-                <!-- Tarjetas de ejemplo que también puedes rellenar con JS si usas members.json -->
                 <article class="spotlight-card card">
                     <h3>X-Ray Center, Radiology Services</h3>
                     <p class="tagline">"Precise imaging, reliable diagnosis"</p>
@@ -132,12 +133,5 @@
             <p>Last Modified: <span id="lastModified"></span></p>
         </div>
     </footer>
-
-    <!-- Scripts necesarios (navegación, fecha del footer, y los específicos de la página principal) -->
-    <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/date.js" defer></script>
-    <script src="scripts/weather.js" defer></script>
-    <script src="scripts/spotlights.js" defer></script>
 </body>
 </html>
-        
