@@ -1,5 +1,4 @@
 @media (min-width: 768px) {
-
     #menu-button {
         display: none;
     }
@@ -13,12 +12,35 @@
 
     nav ul {
         display: flex !important;
-        background: none;
+        flex-direction: row;
+        justify-content: flex-end;
+        background-color: transparent;
     }
 
     nav a {
         border-top: none;
         border-radius: 4px;
+    }
+
+    .hero img {
+        max-height: 450px;
+    }
+
+    .hero-cta {
+        width: 45%;
+        padding: 1.5rem;
+    }
+
+    .info-grid {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 2rem;
+    }
+
+    .spotlights-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
     }
 
     #members-container.grid {
@@ -56,5 +78,4 @@
         justify-content: center;
         align-items: center;
     }
-
 }

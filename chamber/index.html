@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Directory | Matamoros Chamber of Commerce</title>
+    <meta name="description" content="Official and updated directory of chamber of commerce members.">
+    <meta name="author" content="Gad Cerda Lara">
+    
+    <meta property="og:title" content="Directory of the Matamoros Chamber of Commerce">
+    <meta property="og:description" content="official and updated directory of chamber of commerce of Matamoros, Tamaulipas, Mexico.">
+    <meta property="og:image" content="https://gad13f.github.io/wdd231/chamber/images/logo.jpg">
+    <meta property="og:url" content="https://gad13f.github.io/wdd231/chamber/directory.html">
+
+    <link rel="icon" href="images/favicon.png" type="image/png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+     
+    <script defer src="scripts/spotlight.js"></script>
+    <script defer src="scripts/weather.js"></script>
+    <script defer src="scripts/getdates.js"></script>
+    <script defer src="scripts/navigation.js"></script>
+
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo-box">
+                <img src="images/logo.jpg" alt="Chamber of commerce Logo">
+                <div class="site-name">
+                    <span>CHAMBER OF COMMERCE</span>
+                    <span class="sub-title">Matamoros Tamaulipas</span>
+                </div>
+            </div>
+            <button id="menu-button" aria-label="Open Menu">☰</button>
+        </div>
+        <nav>
+            <ul id="menu-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html" class="active">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="home-main">
+        <section class="hero">
+            <img src="images/hero.jpeg" alt="Matamoros Business Community Hero Image" class="hero-image" width="1200" height="600">
+            <div class="hero-cta">
+                <h2>Empowering Local Business & Commerce</h2>
+                <a href="join.html" class="cta-button">Join the Community</a>
+            </div>
+        </section>
+
+        <!-- Contenedor para Eventos y Clima -->
+        <div class="info-grid">
+            <!-- Componente 3: Sección de Evento(s) Actual(es) -->
+            <section class="events-card card">
+                <h2>Current Events</h2>
+                <article class="event-item">
+                    <h3>Annual Business Expo 2026</h3>
+                    <p><strong>Date:</strong> Nov 27, 2026 | <strong>Location:</strong> Gran Hall of Olympic Park</p>
+                    <p>Connect with local business leaders, suppliers, and discover new economic opportunities in Matamoros.</p>
+                </article>
+                <article class="event-item">
+                    <h3>Monthly Networking Breakfast</h3>
+                    <p><strong>Date:</strong> Dec 5, 2026 | <strong>Location:</strong> Chamber Hall</p>
+                    <p>Topic: Digital marketing strategies and funding tools for local enterprises.</p>
+                </article>
+            </section>
+
+            <!-- Componente 4: Sección Meteorológica -->
+            <section class="weather-card card">
+                <h2>Weather</h2>
+                <div class="weather-content">
+                    <img id="weather-icon" src="images/weather-placeholder.svg" alt="Weather condition icon" width="64" height="64">
+                    <div>
+                        <p class="temp"><span id="current-temp">--</span>&deg;C</p>
+                        <p id="weather-desc">Loading weather...</p>
+                    </div>
+                </div>
+                <p>Humidity: <span id="humidity">--</span>%</p>
+            </section>
+        </div>
+
+        <!-- Componente 5: Sección de Focos de Compañía (Spotlights) -->
+        <section class="spotlights-section">
+            <h2>Featured Member Spotlights</h2>
+            <div id="spotlights-container" class="spotlights-grid">
+                <!-- Tarjetas de ejemplo que también puedes rellenar con JS si usas members.json -->
+                <article class="spotlight-card card">
+                    <h3>X-Ray Center, Radiology Services</h3>
+                    <p class="tagline">"Precise imaging, reliable diagnosis"</p>
+                    <p><strong>Phone:</strong> +52 868-555-8765</p>
+                    <p><a href="#" target="_blank">Website</a></p>
+                </article>
+                <article class="spotlight-card card">
+                    <h3>White Smile, Dental Clinic</h3>
+                    <p class="tagline">"White smile, confidence at first glance"</p>
+                    <p><strong>Phone:</strong> +52 868-654-3210</p>
+                    <p><a href="#" target="_blank">Website</a></p>
+                </article>
+                <article class="spotlight-card card">
+                    <h3>Innova Technological S.A.</h3>
+                    <p class="tagline">"Applied technology for your business"</p>
+                    <p><strong>Phone:</strong> +52 868-123-678</p>
+                    <p><a href="#" target="_blank">Website</a></p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-top">
+            <div class="footer-info">
+                <h2>matamoros chamber of commerce</h2>
+                <p>6ta, Matamoros, Mexico</p>
+                <p>info@matamoroschamber.org | (868) 435-1234</p>
+            </div>
+        </div>
+        <hr>
+        
+        <div class="footer-bottom">
+            <p>&copy; <span id="currentyear"></span> Gad Cerda Lara | WDD 231 Class Project</p>
+            <p>Last Modified: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+
+    <!-- Scripts necesarios (navegación, fecha del footer, y los específicos de la página principal) -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/spotlights.js" defer></script>
+</body>
+</html>
+        
