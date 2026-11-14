@@ -1,5 +1,3 @@
-// scripts/weather.js
-
 const currentTemp = document.querySelector('#current-temp');
 const weatherIcon = document.querySelector('#weather-icon');
 const weatherDesc = document.querySelector('#weather-desc');
@@ -52,7 +50,6 @@ function displayForecast(data) {
     forecastContainer.innerHTML = '';
 
     forecastList.forEach(day => {
-        // CORREGIDO: Se agregó el operador * y se unió en una sola línea
         const d = new Date(day.dt * 1000);
         const options = { weekday: 'short' };
         const dayName = d.toLocaleDateString('es-ES', options);

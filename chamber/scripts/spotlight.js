@@ -11,13 +11,11 @@ async function getMembersData() {
 }
 
 function displaySpotlights(members) {
-    // Filtramos miembros que tengan nivel de membresía 2 (Silver) o 3 (Gold)
+    
     const filteredMembers = members.filter(member => member.membershipLevel >= 2);
     
-    // Mezclamos aleatoriamente el arreglo
     const shuffled = filteredMembers.sort(() => 0.5 - Math.random());
     
-    // Seleccionamos los primeros 3 (o los que quieras mostrar)
     const selected = shuffled.slice(0, 3);
 
     if (spotlightsContainer) {
