@@ -166,7 +166,7 @@ main {
 .membership-level {
     font-weight: bold;
     color: var(--primary-color);
-    margin-top: 0.5rem !important;
+    margin-top: 0.5rem;
 }
 
 #members-container.list {
