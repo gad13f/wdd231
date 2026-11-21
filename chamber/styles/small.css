@@ -378,9 +378,6 @@ footer hr {
     margin-bottom: 0.5rem;
 }
 
-/* ==========================================
-   JOIN & THANK YOU PAGES (small.css)
-   ========================================== */
 .join-main h1,
 .thankyou-main h1 {
     color: var(--primary-color);
@@ -452,7 +449,6 @@ footer hr {
     margin-bottom: 0.25rem;
 }
 
-/* Animación automática al cargar la página (requisito 7) */
 @keyframes cardEntrance {
     from {
         opacity: 0;
