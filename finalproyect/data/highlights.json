@@ -1,0 +1,41 @@
+[
+  {
+    "id": "hl-1",
+    "season": "Autumn / Winter",
+    "title": "Sierra Canyon Backpacker Trek",
+    "location": "Sierra Madre Foothills",
+    "duration": "2 Days / 1 Night",
+    "budgetTier": "Backpacker",
+    "priceLabel": "From $115 / person",
+    "image": "images/canyon.jpg",
+    "alt": "Hikers walking along a rocky canyon trail surrounded by trees",
+    "summary": "Guided trail pass, shared camp spot, and basic trail snacks for budget-conscious trekkers.",
+    "details": "Includes certified trail guide, permit fees, emergency support, and camping pitch access. Bring your own sleeping bag or rent basic gear at check-in."
+  },
+  {
+    "id": "hl-2",
+    "season": "Year-Round",
+    "title": "Clearwater Family Kayak Float",
+    "location": "Emerald River Valley",
+    "duration": "Half Day (4 Hours)",
+    "budgetTier": "Family",
+    "priceLabel": "From $65 / person",
+    "image": "images/kayak.jpg",
+    "alt": "Calm river water with green trees along the shoreline",
+    "summary": "Calm-water paddling route ideal for families with older kids seeking affordable outdoor fun.",
+    "details": "Includes kayak, paddle, life vest, safety briefing, and shuttle back to the launch point. Designed for beginners and families."
+  },
+  {
+    "id": "hl-3",
+    "season": "Seasonal Group Special",
+    "title": "Pine Ridge Group Basecamp",
+    "location": "Highland Pine Reserve",
+    "duration": "3 Days / 2 Nights",
+    "budgetTier": "Group",
+    "priceLabel": "From $180 / person (6+ guests)",
+    "image": "images/stars.jpg",
+    "alt": "Pine forest clearing under clear daytime sky",
+    "summary": "Group-friendly forest basecamp with daytime hikes, stargazing, and discounted group rates.",
+    "details": "Tailored for friend groups, clubs, and student outings of six or more. Includes reserved group camp area, daytime guided hikes, and group logistics."
+  }
+]

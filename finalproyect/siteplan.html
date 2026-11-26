@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site Plan | Wild Path Adventures</title>
+  <meta name="description" content="Website planning document for Wild Path Adventures, an affordable nature and outdoor tourism agency.">
+  <meta name="author" content="Your Name">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Site Plan CSS -->
+  <link rel="stylesheet" href="styles/siteplan.css">
+</head>
+<body>
+  <header class="plan-header">
+    <div class="container">
+      <p class="eyebrow">WDD 231 Individual Project Plan</p>
+      <h1>Wild Path Adventures — Website Plan</h1>
+      <p class="subtitle">Accessible, budget-friendly nature and adventure travel agency website.</p>
+    </div>
+  </header>
+
+  <main class="container plan-main">
+    <!-- 1. Site Name -->
+    <section class="plan-card" aria-labelledby="site-name-heading">
+      <h2 id="site-name-heading">1. Site Name</h2>
+      <p><strong>Selected Name:</strong> Wild Path Adventures</p>
+      <p><strong>Optional Domain Availability:</strong> <code>wildpathadventures.org</code></p>
+      <p>
+        <strong>Reason for Selection:</strong> The name clearly communicates the agency's core mission: outdoor exploration and nature trails ("WildPath") combined with accessible, cost-effective pricing ("Budget Adventures") for solo backpackers, families, and groups—distinguishing it from traditional tourism.
+      </p>
+    </section>
+
+    <!-- 2. Site Purpose -->
+    <section class="plan-card" aria-labelledby="site-purpose-heading">
+      <h2 id="site-purpose-heading">2. Site Purpose</h2>
+      <p>
+        <strong>Wild Path Adventures</strong> provides a three-page online hub connecting budget-conscious travelers with affordable outdoor and nature experiences. The website delivers:
+      </p>
+      <ul>
+        <li>
+          <strong>Home Page:</strong> Introduces the agency's value-driven approach, showcases seasonal route highlights with modal details, and offers a quick adventure finder by budget tier and activity type.
+        </li>
+        <li>
+          <strong>Packages &amp; Destinations Page:</strong> Displays a dynamic catalog of affordable adventure routes fetched from a local JSON file, filterable by budget level (Backpacker, Family, Group) with detailed inclusion modals.
+        </li>
+        <li>
+          <strong>Contact &amp; Quotes Page:</strong> Features an interactive quote request form for personalized individual or group trip estimates alongside general agency contact details.
+        </li>
+      </ul>
+    </section>
+
+    <!-- 3. Scenarios -->
+    <section class="plan-card" aria-labelledby="scenarios-heading">
+      <h2 id="scenarios-heading">3. Scenarios</h2>
+      <p>Target audience questions that guide the site's content and interactive features:</p>
+      <ul>
+        <li>
+          <strong>Scenario 1 (Solo Backpacker):</strong> "I am traveling on a tight backpacker budget—which multi-day hiking or camping routes are under $150 per person and include basic trail permits or camp access?"
+        </li>
+        <li>
+          <strong>Scenario 2 (Group Organizer):</strong> "I want to plan an affordable weekend kayaking and basecamp trip for a group of eight friends—how can I request a customized group price estimate?"
+        </li>
+        <li>
+          <strong>Scenario 3 (Family Traveler):</strong> "What are the best seasonal outdoor activities available right now that are safe and budget-friendly for families?"
+        </li>
+      </ul>
+    </section>
+
+    <!-- 4. Color Scheme -->
+    <section class="plan-card" aria-labelledby="color-scheme-heading">
+      <h2 id="color-scheme-heading">4. Color Scheme</h2>
+      <p>
+        The palette pairs deep forest green with terracotta accents against clean neutral backgrounds to evoke nature.
+      </p>
+
+      <div class="swatch-grid">
+        <article class="swatch">
+          <div class="swatch-color swatch-primary" aria-hidden="true">#1B4332</div>
+          <div class="swatch-info">
+            <h3>Forest Pine (<code>#1B4332</code>)</h3>
+            <p><strong>Usage:</strong> Main header, navigation bar background, primary section headings (<code>h1</code>, <code>h2</code>), and footer background.</p>
+          </div>
+        </article>
+
+        <article class="swatch">
+          <div class="swatch-color swatch-accent" aria-hidden="true">#B84322</div>
+          <div class="swatch-info">
+            <h3>Terracotta Trail (<code>#B84322</code>)</h3>
+            <p><strong>Usage:</strong> Primary call-to-action buttons, active navigation wayfinding highlights, price tags, and focus outlines.</p>
+          </div>
+        </article>
+
+        <article class="swatch">
+          <div class="swatch-color swatch-bg" aria-hidden="true">#F8F9FA</div>
+          <div class="swatch-info">
+            <h3>Mist Sand (<code>#F8F9FA</code>)</h3>
+            <p><strong>Usage:</strong> Main page background color to ensure clean visual breathing room and white space.</p>
+          </div>
+        </article>
+
+        <article class="swatch">
+          <div class="swatch-color swatch-surface" aria-hidden="true">#FFFFFF</div>
+          <div class="swatch-info">
+            <h3>Crisp White (<code>#FFFFFF</code>)</h3>
+            <p><strong>Usage:</strong> Card surfaces, search containers, form panels, and modal dialog backgrounds.</p>
+          </div>
+        </article>
+
+        <article class="swatch">
+          <div class="swatch-color swatch-text" aria-hidden="true">#1F2937</div>
+          <div class="swatch-info">
+            <h3>Charcoal Slate (<code>#1F2937</code>)</h3>
+            <p><strong>Usage:</strong> Body paragraphs, list items, labels, and descriptive text on light surfaces.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 5. Typography -->
+    <section class="plan-card" aria-labelledby="typography-heading">
+      <h2 id="typography-heading">5. Typography</h2>
+      <p>Two Google Fonts are selected for clear visual hierarchy and fast readability across mobile and desktop viewports:</p>
+
+      <div class="typography-samples">
+        <article class="type-box">
+          <h3 class="sample-heading-font">Heading Font: Montserrat (Weights: 600, 700)</h3>
+          <p>
+            <strong>Where Applied:</strong> Page titles h1, section headings, h2, h3, brand logo text, navigation links, buttons, and package price.
+          </p>
+          <p class="sample-heading-preview">Example: Real Outdoor Adventures for Real Budgets — $115 / person</p>
+        </article>
+
+        <article class="type-box">
+          <h3 class="sample-body-font">Body Font: Open Sans (Weights: 400, 600)</h3>
+          <p>
+            <strong>Where Applied:</strong> Body paragraphs, route descriptions, scenario lists, form inputs/labels, modal details, and footer text.
+          </p>
+          <p class="sample-body-preview">
+            Sample: Discover guided hikes, river kayaking, mountain camping, and eco-trails designed for solo backpackers, families, and group outings.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- 6. Wireframe -->
+    <section class="plan-card" aria-labelledby="wireframe-heading">
+      <h2 id="wireframe-heading">6. Home Page Wireframes</h2>
+      <p>
+        Black-and-white structural sketches illustrating the responsive layout of <code>index.html</code> across mobile (320px) and desktop viewports, including the hamburger menu, hero banner, quick adventure finder, 3-column seasonal highlights grid, and footer links.
+      </p>
+
+      <div class="wireframe-grid">
+        <figure class="wireframe-item">
+          <img src="images/vertical.jpeg" alt="Black and white wireframe sketch of the WildTrail mobile home page layout" width="360" height="720" loading="lazy">
+          <figcaption><strong>Mobile Viewport (320px):</strong> Column stacked layout with collapsible hamburger navigation, hero CTA, quick filter form, stacked seasonal highlight cards, and footer.</figcaption>
+        </figure>
+
+        <figure class="wireframe-item">
+          <img src="images/horizontal.jpeg" alt="Black and white wireframe sketch of the WildTrail desktop home page layout" width="800" height="600" loading="lazy">
+          <figcaption><strong>Desktop Viewport (1024px+):</strong> Horizontal top navigation bar, full-width hero banner, horizontal quick search bar, 3-column grid for seasonal highlights and agency values, and 3-column footer.</figcaption>
+        </figure>
+      </div>
+    </section>
+  </main>
+
+  <footer class="plan-footer">
+    <div class="container">
+      <p>&copy; 2026 Wild Path Adventures | WDD 231 Individual Project Site Plan</p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wild Path Adventures | Affordable Nature &amp; Outdoor Trips</title>
+  <meta name="description" content="Explore and discover your next outdoor adventure with guided hikes.river kayaking, camping, and eco-trails designed for solo trvelers, families, or groups.">
+  <meta name="author" content="Your Name">
+
+  <!-- Open Graph Metadata -->
+  <meta property="og:title" content="WildPath Adventures | Affordable Nature Tourism">
+  <meta property="og:description" content="Accessible outdoor adventures and nature routes tailored to personal and group budgets.">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%231B4332'/%3E%3Cpath d='M12 46L28 20l10 15 6-8 8 19H12z' fill='%23D95D39'/%3E%3C/svg%3E">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Styles & ES Module -->
+  <link rel="stylesheet" href="styles/main.css">
+  <script type="module" src="scripts/main.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">WP</span>
+        <span>Wild Path Adventures</span>
+      </a>
+
+      <button id="menu-toggle" class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation menu">
+        ☰
+      </button>
+
+      <nav id="primary-nav" class="primary-nav" aria-label="Main Navigation">
+        <ul>
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="packages.html">Packages &amp; Destinations</a></li>
+          <li><a href="contact.html">Contact &amp; Quotes</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- Hero Section -->
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="container hero-content">
+        <p class="eyebrow">Nature Tourism To Live Unique Moments</p>
+        <h1 id="hero-heading">Real Outdoor Adventures for Real Budgets</h1>
+        <p class="hero-lead">
+          Explore and discover your next outdoor adventure with guided hikes, river kayaking, camping, and eco-trails designed for solo travelers, families, or groups.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="packages.html">Browse All Packages</a>
+          <a class="btn btn-secondary" href="contact.html">Request a Group Quote</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick Search & Filter Engine -->
+    <section class="quick-search-section" aria-labelledby="quick-search-heading">
+      <div class="container">
+        <div class="search-card">
+          <h2 id="quick-search-heading">Quick Adventure Finder</h2>
+          <p>Choose your budget tier and activity style. Your selection is saved automatically for your next visit.</p>
+
+          <form id="quick-search-form" class="search-form" action="packages.html" method="get">
+            <div class="form-group">
+              <label for="budget-select">Budget Tier</label>
+              <select id="budget-select" name="budget">
+                <option value="all">All Budgets</option>
+                <option value="backpacker">Backpacker (Under $150)</option>
+                <option value="family">Family Friendly ($150–$350)</option>
+                <option value="group">Group Outings (Custom / Per Person)</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="activity-select">Activity Type</label>
+              <select id="activity-select" name="activity">
+                <option value="all">All Activities</option>
+                <option value="hiking">Hiking &amp; Trekking</option>
+                <option value="kayaking">Kayaking &amp; Paddleboarding</option>
+                <option value="camping">Camping &amp; Eco-Trails</option>
+              </select>
+            </div>
+
+            <div class="form-actions">
+              <button type="submit" class="btn btn-primary">Find Adventures</button>
+              <button type="button" id="reset-filters-btn" class="btn btn-outline">Reset</button>
+            </div>
+          </form>
+
+          <p id="saved-preference-status" class="preference-status" aria-live="polite"></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seasonal Highlights -->
+    <section class="highlights-section" aria-labelledby="highlights-heading">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="highlights-heading">Seasonal Highlights</h2>
+          <p>Top value routes featured this season for accessible nature exploration.</p>
+        </div>
+
+        <div id="highlights-grid" class="cards-grid" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- Why WildTrail -->
+    <section class="value-section" aria-labelledby="value-heading">
+      <div class="container">
+        <h2 id="value-heading">Built for Independent &amp; Group Explorers</h2>
+        <div class="value-grid">
+          <article class="value-item">
+            <h3>Transparent Pricing</h3>
+            <p>Clear cost breakdowns upfront with no hidden resort surcharges or overpriced VIP add-ons.</p>
+          </article>
+          <article class="value-item">
+            <h3>Local Nature Guides</h3>
+            <p>Routes led by experienced outdoor guides focused on safety, conservation, and authentic terrain.</p>
+          </article>
+          <article class="value-item">
+            <h3>Flexible Group Scaling</h3>
+            <p>Options tailored for solo hikers, budget-minded families, clubs, and student or friend groups.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Accessible Modal Dialog for Highlight Details -->
+  <dialog id="highlight-dialog" class="detail-dialog" aria-labelledby="dialog-title">
+    <div class="dialog-body">
+      <div class="dialog-header">
+        <h2 id="dialog-title"></h2>
+        <button id="close-dialog-btn" class="close-btn" type="button" aria-label="Close modal">✕</button>
+      </div>
+      <div id="dialog-content"></div>
+    </div>
+  </dialog>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h2>Wild Path Adventures</h2>
+        <p>Affordable outdoor &amp; nature travel for individuals, families, and groups.</p>
+      </div>
+
+      <div>
+        <h3>Explore</h3>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="packages.html">Packages &amp; Destinations</a></li>
+          <li><a href="contact.html">Contact &amp; Quotes</a></li>
+          <li><a href="attributions.html">Attributions</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Project &amp; Demo</h3>
+        <ul class="footer-links">
+          <!-- Reemplaza el href con el enlace real de tu video de demostración -->
+          <li><a href="https://youtube.com" target="_blank" rel="noopener noreferrer">JavaScript Demo Video</a></li>
+        </ul>
+        <p class="copyright">&copy; <span id="current-year">2026</span> Wild Path Adventures. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
