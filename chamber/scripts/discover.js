@@ -17,7 +17,7 @@ function renderVisitMessage() {
         const elapsedMs = now - lastVisit;
 
         if (elapsedMs < MS_PER_DAY) {
-            banner.textContent = "Back so soon! Awesome!";
+            banner.textContent = "Located in northern Mexico! this region offers you different entertainment and cultural opportunities. Visit this place and explore the city of matamoros";
         } else {
             const days = Math.floor(elapsedMs / MS_PER_DAY);
             const dayWord = days === 1 ? "day" : "days";
@@ -62,7 +62,8 @@ function renderCards(items) {
         button.className = "learn-more-btn";
         button.textContent = "learn more";
         button.addEventListener("click", () => {
-            alert(`${item.name}\n\nAddress: ${item.address}\n\n${item.description}`);
+            const query = encodeURIComponent(`${item.name} Matamoros Tamaulipas`);
+            window.open(`https://www.google.com/search?q=${query}`, "_blank", "noopener,noreferrer");
         });
 
         card.append(title, figure, address, description, button);
